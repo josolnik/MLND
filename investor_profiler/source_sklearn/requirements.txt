@@ -1,0 +1,6 @@
+sagemaker
+sagemaker_inference
+pandas
+pandas_gbq
+google-cloud-bigquery<=1.22.0
+s3fs
