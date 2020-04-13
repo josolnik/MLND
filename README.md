@@ -1,17 +1,24 @@
-# Udacity Machine Learning Nanodegree
+# Udacity Machine Learning Engineering Nanodegree
 
-Projects completed as a part of Udacity's Machine Learning Nanodegree.
-
-Capstone project:
-### Crypto investor profiler
+##  Crypto investor profiler
+(capstone project)
 
 #### Project overview:
-The aim of this project is to combine blockchain data, machine learning and cloud managed services into a final product as a web app. Blockchain data is publicly available as a GCP public dataset.
-The web app predicts the investor profile (cluster) of the Ethereum address that is entered into the user interface. This is based on three features that are extracted from the above-mentioned data source: Current balance, unique transfers, and unique tokens held. The project is formulated as an unsupervised machine learning problem.
+The aim of this project is to combine blockchain data, machine learning and cloud managed services into a final product as a web app. Ethereum blockchain data is publicly available as a GCP public dataset.
+The web app predicts the investor profile (cluster) of the Ethereum address that is entered into the user interface. The deployed model is served as an API.
+
+This is based on three features that are extracted from the above-mentioned data source: 
+- Current balance
+- Unique transfers
+- Unique tokens held
+
+The project is formulated as an unsupervised machine learning problem.
 In the finance lingo, an investor profile defines an individual's preference in investing decisions. Examples of this are risk-averse/risk-tolerant, diversity of  asset classes and individual assets, investment in growth stocks or value stocks, etc.
 In this project, it refers to any kind of investing behavior that can be quantified and used to differentiate between different Ethereum addresses.
 
-It's important to note that a lot of code is built by combining code from different projects throughout the nanodegree program.. The aim is to create a workable solution and play with different services, not to optimize every part of the pipeline.
+It's important to note that a lot of code is built by combining code from different projects throughout the nanodegree program. The aim is to create a minimum viable model.
+
+The prediction script performs on-the-fly calculation of feature values of the provided Ethereum address. It queries the Ethereum data source and returns the normalized feature values. These are then used as input into the trained model which returns the predicted cluster value.
 
 
 AWS services used in the project:
