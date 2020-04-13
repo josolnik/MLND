@@ -1,16 +1,16 @@
 # Udacity Machine Learning Engineering Nanodegree
 
 ##  Crypto investor profiler
-(capstone project)
+#### Capstone project
 
 #### Project overview:
 The aim of this project is to combine blockchain data, machine learning and cloud managed services into a final product as a web app. Ethereum blockchain data is publicly available as a GCP public dataset.
 The web app predicts the investor profile (cluster) of the Ethereum address that is entered into the user interface. The deployed model is served as an API.
 
 This is based on three features that are extracted from the above-mentioned data source: 
-- Current balance
-- Unique transfers
-- Unique tokens held
+- Current Ethereum balance
+- Number of Ethereum token transfers
+- Number of unique Ethereum tokens held
 
 The project is formulated as an unsupervised machine learning problem.
 In the finance lingo, an investor profile defines an individual's preference in investing decisions. Examples of this are risk-averse/risk-tolerant, diversity of  asset classes and individual assets, investment in growth stocks or value stocks, etc.
